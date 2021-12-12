@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Anadada Pro' rel='stylesheet'>
+<link rel="stylesheet" href=style.css>
+<title>About Us</title>
+
+<style type="text/css">
+	
+	.accountburger a {display:block; width:5; visibility:hidden;}
+        .accountburger:hover a {display:block; width:5; visibility:visible;}
+        a.burger {padding-top: 10px; padding-bottom: 10px; text-align: right}
+        a.burger:hover {text-decoration:underline}
+	
+	#history {
+		background-color: #FCECC8;
+	}
+
+	#history2 {
+		font-family: 'Amaranth', sans-serif;
+		font-weight: 600pt;
+		font-style: italic;
+		font-size: 24pt;
+		color: #003267;
+		padding: 40px 200px 100px 200px;
+		box-sizing:border-box;
+		display: block;
+	}
+
+	#method {
+		font-family: 'Amaranth', sans-serif;
+		font-weight: 600pt;
+		font-style: italic;
+		font-size: 24pt;
+		color: #003267;
+		background-color: #98CCCC;
+		padding: 40px 200px 100px 200px;
+		box-sizing:border-box;
+		display: block;
+	}
+
+	.gray {
+		filter: grayscale(100%);
+	}
+
+	@media (max-width: 910px) {
+		#method, #history2 {
+			padding: 40px;
+			box-sizing:border-box;
+			display: block;
+			font-size: 18pt;
+		}
+	}
+
+</style>
+</head>
+
+<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="chocolate, gourmet, fine, truffle, French, Cambridge, gifts, milk, dark, white, chocolatier, catering">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type = "text/css" href= "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+        <title>Rêve au Chocolat</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://ajmiller00.github.io/Midterm/index.html"><img src="https://ajmiller00.github.io/Midterm/logo-06.png" class="header"/></a>
+            <nav>
+                <ul>
+                    <li><a style = "text-decoration: underline; text-underline-position: under; box-sizing: border-box;" href="https://ajmiller00.github.io/Midterm/about_us.html">About Us</a> </li>
+                    <li><a href="https://reveauchocolat-products.herokuapp.com/">Shop</a> </li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/catering.html">Catering</a> </li>
+                    <li><a href="https://reveauchocolat-gifts.herokuapp.com/">Gifts</a> </li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/workshops_events.html">Events</a> </li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/contact.html" >Contact Us</a> </li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/mycart.html" style="padding:10px 20px;
+                    background-color: #ff9933;
+                    color: #003267;
+                    border: none;
+                    margin-top:  10px;
+                    cursor:pointer;
+                    -webkit-border-radius: 5px;
+                    border-radius: 4px;">My Cart</a> </li>
+
+                    <li style = "float:right; padding-left: 0px">
+                      <div class="accountburger"><img src='https://ajmiller00.github.io/Midterm/acc_icon.png' width="30px">
+                        <a class = "burger" href="https://ajmiller00.github.io/Midterm/myaccount.html">My Account</a>
+                        <a class = "burger" href="https://ajmiller00.github.io/Midterm/login.html">Log In/ Sign Up</a>
+                      </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="burger" id = "bur">
+                <img src="https://ajmiller00.github.io/Midterm/burger.png" class="burger" onclick="show()">
+            </div>
+
+            <div class="oBurger" id = "burger">
+                <ul id = "burgerUl">
+                    <li><a style = "text-decoration: underline; text-underline-position: under; box-sizing: border-box;" href="https://ajmiller00.github.io/Midterm/about_us.html">About Us</a> </li>
+                    <li><a href="https://reveauchocolat-products.herokuapp.com/">Shop</a> </li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/catering.html">Catering</a> </li>
+                    <li><a href="https://reveauchocolat-gifts.herokuapp.com/">Gifts</a> </li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/workshops_events.html">Events</a> </li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/contact.html" >Contact Us</a> </li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/mycart.html">My Cart</a></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/myaccount.html">My Account</a></li>
+                    <li><a href="https://ajmiller00.github.io/Midterm/login.html">Log In/ Sign Up</a></li>
+                </ul>
+            </div>
+
+
+        </header>
+
+        <script type="text/javascript">
+        function show() {
+            if (document.getElementById("burger").style.display == "none") {
+                document.getElementById("burger").style.display = "block";
+            } else {
+                document.getElementById("burger").style.display = "none";
+            }
+        }
+        </script>
+
+	<div>
+		<div id='history'>
+			<h1>About Us</h1>
+			<div id='history2'>
+				<p align="center"> <img class='gray' src='france_bw.jpg' width=70% max-width=250px> </p>
+				<h2 style="font-style: normal; font-size: 30pt;">History</h2>
+				Rêve au Chocolat was founded in 1987 by French chocolate connoisseur Jacques Dubois. After stumbling into a chocolate making course at the age of eighteen, Dubois became immediately fascinated by the art of chocolate. Just three years later, following professional culinary training at Ecole Chocolat, Dubois opened Rêve au Chocolat.
+				<br><br>
+				Rêve au Chocolat was originally located in Kendall Square, but has since expanded in size and moved to Harvard Square.
+			</div>
+		</div>
+		<div id='method'>
+			<p align="center"> <img class='gray' src='method.jpg' width=70% max-width=250px> </p>
+			<h2 style="font-style: normal; font-size: 30pt;">Our Method</h2>
+			For more than three decades, Rêve au Chocolat has provided Boston with the finest chocolates. Never using molds, each of our chocolates are handcrafted over a three-day period. The unique flavor and beautiful presentation are our great pride and joy.
+		</div>
+	</div>
+
+	<footer>
+		&copy; 2021 Rêve au Chocolat – 23 Fausse Street, Cambridge, MA – (617) 555 0113
+	</footer>
+</body>
+</html>
